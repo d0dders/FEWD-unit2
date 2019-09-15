@@ -1,3 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+nav,
+main,
+footer {
+  width: 92%;
+  margin: auto;
+}
+
+h1 {
+  margin: 0px;
+  padding: 25px;
+}
+
+h2 {
+  padding: 40px;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+
+nav li {
+  padding: 15px;
+  background-color: white;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+}
+
+header {
+  background-color: lightgray;
+}
+
+.profile-image {
+  width: 60%;
+}
+
+.about-text {
+  margin: 30px;
+  padding-bottom: 60px;
+}
+
+p {
+  line-height: 25px;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-desc {
+  margin-bottom: 40px;;
+}
+
+em {
+  font-weight: bold;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px;
+}
+
 /* Styles for tablet screens */
 @media only screen and (min-width: 768px) {
     body {
