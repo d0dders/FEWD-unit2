@@ -9,6 +9,13 @@ footer {
   margin: auto;
 }
 
+hr {
+  margin-top: 60px;
+  height: 1px;
+  border: 0 none;
+  background-color: lightgray;
+}
+
 h1 {
   margin: 0px;
   padding: 25px;
