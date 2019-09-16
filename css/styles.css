@@ -105,7 +105,39 @@ footer {
 
 .nav-bottom {
   display: none;
+  
 }
+
+/*  Progress bar styling - https://www.lambdatest.com/blog/how-to-create-a-cross-browser-compatible-html-progress-bar/  */
+/* IE and EDGE */
+progress {
+  /* RESETS */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  background-color: lightgray;
+  color: #36ACD0;
+}
+/* WEBKIT BROWSERS - CHROME, OPERA AND SAFARI */
+progress::-webkit-progress-bar {
+  background-color: lightgray;
+  border-radius: 10px;
+}
+progress::-webkit-progress-value {
+  background-color:#36ACD0;
+  border-radius: 10px;
+}
+/* MOZILLA FIREFOX */
+progress::-moz-progress-bar {
+  background-color: #36ACD0;
+  border-radius: 10px;
+}
+/* End of progress bar styling */
 
 /* Styles for tablet screens */
 @media only screen and (min-width: 768px) {
@@ -155,6 +187,15 @@ footer {
 
     .project-image {
       margin-bottom: 0px;
+    }
+
+    #skills {
+      width: 80%;
+      margin: auto;
+    }
+
+    .skill-head {
+      text-align: left;
     }
 
     .contact-text {
