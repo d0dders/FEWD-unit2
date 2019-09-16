@@ -2,9 +2,10 @@
   box-sizing: border-box;
 }
 
-nav,
+.nav-top,
 main,
-footer {
+footer,
+#about {
   width: 92%;
   margin: auto;
 }
@@ -25,13 +26,18 @@ h2 {
   padding: 40px;
 }
 
-nav ul{
+h1,
+h2 {
+  color: darkred;
+}
+
+ul{
   list-style: none;
   padding: 0px;
   margin-bottom: 60px;
 }
 
-nav li {
+.nav-top li {
   padding: 15px;
   background-color: white;
   margin: 10px 0px;
@@ -41,6 +47,10 @@ nav li {
 a {
   text-decoration: none;
   color: black;
+}
+
+a:hover {
+  color: darkred;
 }
 
 body {
@@ -57,8 +67,14 @@ header {
   width: 60%;
 }
 
+.about-text,
+.contact-text,
+.project-desc {
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
 .about-text {
-  margin: 30px;
+  margin-top: 30px;
   padding-bottom: 60px;
 }
 
@@ -83,19 +99,122 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 15px;
+  padding-bottom: 20px;
+  align-items: center;
+}
+
+.nav-bottom {
+  display: none;
 }
 
 /* Styles for tablet screens */
 @media only screen and (min-width: 768px) {
     body {
-      background-color: lightblue;
+      font-size: 1.2rem;
+    }
+
+    .nav-top li {
+      display: inline;
+      background-color: lightgray;
+    }
+    
+    #about {
+      display: flex;
+      flex-direction: row-reverse;
+      width: 92%;
+      margin: auto;
+      padding-bottom: 60px;
+      align-items: flex-start;
+    }
+
+    .about-text {
+      text-align: justify;
+      margin: 0 30px 0 0;
+      padding: 0;
+    }
+
+    .profile-image {
+      width: 40%;
+    }
+
+    #portfolio {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .portfolio-head {
+      width: 100%;
+    }
+
+    .project {
+      width: 48%;
+      margin-bottom: 30px;
+    }
+
+    .project-image {
+      margin-bottom: 0px;
+    }
+
+    .contact-text {
+      width: 80%;
+      margin: auto;
+      padding-bottom: 20px;
+    }
+
+    .back-to-top {
+      display: none;
+    }
+
+    .nav-bottom {
+      display: block;
+      margin: 0px;
+    }
+
+    .nav-bottom ul {
+      margin: 0px;
+    }
+
+    .nav-bottom li {
+      display: inline;
+      margin-left: 20px;
+      font-weight: bold;
     }
   }
 
   /* Styles for desktop screens */
   @media only screen and (min-width: 1024px) {
-    body {
-      background-color: darkblue;
+
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 92%;
+      margin: auto;
+      padding: 40px 0;
     }
+
+    .top-row h1 {
+      padding: 0px;
+    }
+
+    .nav-top {
+      width: auto;
+      margin: 0;
+    }
+
+    .nav-top ul {
+      margin: 0px;
+    }
+
+    .nav-top li {
+      padding: 0px;
+      margin-left: 30px;
+    }
+
+    .project {
+      width: 32%;
+    }
+
   }
