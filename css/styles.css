@@ -38,10 +38,15 @@ ul{
 }
 
 .nav-top li {
-  padding: 15px;
+  
   background-color: white;
   margin: 10px 0px;
   font-weight: bold;
+}
+
+li a {
+  padding: 15px;
+  display: block;
 }
 
 a {
@@ -152,6 +157,12 @@ progress::-moz-progress-bar {
     .nav-top li {
       display: inline;
       background-color: lightgray;
+      padding: 15px;
+    }
+
+    li a {
+      display: inline;
+      padding: 0;
     }
     
     #about {
