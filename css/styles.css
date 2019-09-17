@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 
-.nav-top,
+.top-row,
 main,
 footer,
 #about {
   width: 92%;
   margin: auto;
+  max-width: 1300px;
 }
 
 hr {
